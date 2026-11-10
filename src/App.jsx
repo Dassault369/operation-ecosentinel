@@ -137,7 +137,7 @@ export default function EcoSentinelApp() {
           }
       };
       
-      const apiKey = "";
+      const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
       
       if (!apiKey || apiKey === "") {
         console.warn("API Key is missing. AI Analysis will not work.");
